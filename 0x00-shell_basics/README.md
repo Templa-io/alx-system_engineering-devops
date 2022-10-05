@@ -1,0 +1,3 @@
+o "Value of SCRIPT_PATH: ${SCRIPT_PATH}"
+echo "Value of ABS_SCRIPT_PATH: ${ABS_SCRIPT_PATH}"
+echo "Value of ABS_DIRECTORY: ${ABS_DIRECTORY}"
