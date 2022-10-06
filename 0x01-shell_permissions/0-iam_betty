@@ -1,2 +1,2 @@
 #!/bin/bash
-Username 
+su –l [other_user]
