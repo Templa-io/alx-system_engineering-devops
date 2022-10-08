@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lapmv
+ls  -la -m -p
