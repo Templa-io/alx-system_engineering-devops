@@ -1,4 +1,4 @@
-i#!/usr/bin/env bash
+#!/usr/bin/env bash
 #Display Holberton School 10 times and at 9th line print Hi.
 
 i=0
