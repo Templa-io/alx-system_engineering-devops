@@ -1,21 +1,33 @@
 #!/usr/bin/env bash
+# Displays numbers from 1 to 20 in addition to:
+#   Display "bad luck from China" for the 4th line
+#   Display "bad luck from Japan" for the 9th line
+#   Display "bad luck from Italy" for the 17th line
 # displays numbers from 1 to 20.
 
+i=1
+
+while [ $i -le 20 ]
 COUNTER=1
 while [ $COUNTER -lt 21 ]
 do
+    echo "$i"
+    case $i in
+	"4") echo "bad luck from China";;
+	"9") echo "bad luck from Japan";;
+	"17") echo "bad luck from Italy";;
     case $COUNTER in
 
         4)
 	    echo $COUNTER
 	    echo "bad luck from China"
 	    ;;
-	
+
 	9)
 	    echo $COUNTER
 	    echo "bad luck from Japan"
 	    ;;
-	
+
 	17)
 	    echo $COUNTER
 	    echo "bad luck from Italy"
@@ -25,7 +37,7 @@ do
 	    echo $COUNTER
 	    ;;
     esac
+    (( i++ ))
 
     let COUNTER+=1
 done
-
