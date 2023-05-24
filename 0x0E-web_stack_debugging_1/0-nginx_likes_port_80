@@ -5,8 +5,6 @@ apt-get update
 apt-get -y install curl
 rm /etc/nginx/sites-available/*
 rm /etc/nginx/sites-enabled/*~
-new="80 default_server"
-old="8080 default_server"
-sed -i "s/$old/$new/" /etc/nginx/sites-enabled/default
+sed -i "s/$8080/$80/" /etc/nginx/sites-enabled/default
 
 service nginx restart
